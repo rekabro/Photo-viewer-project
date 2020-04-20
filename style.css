@@ -1,6 +1,7 @@
 
 body {
-    background-color: rgb(242, 229, 245);
+    /*background-color: rgb(242, 229, 245);*/
+    background: -webkit-linear-gradient(left, #7575e4, #9797ee, #a8b2eb, #ceceeb, #a8b2eb, #9797ee, #7575e4);
     position: relative;
 }
 #viewer {
@@ -9,8 +10,7 @@ body {
     display: flex;
     position: relative;
     justify-content: center;
-    background-color: rgb(10, 150, 189);
-    background-image: linear-gradient (top, rgba(144, 183, 207, 0.966), rgba(17, 125, 192, 0.966));
+    background: -webkit-linear-gradient(top, #eee08f, #e0ddae,#eee08f);
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -51,10 +51,11 @@ p {
     position: absolute;
     height: 50px;
     width: 30px;
-    background-color:  rgb(10, 150, 189);
+    background-color:  #e0ddae;
     border: none;
     top: 230px;
     right: 800px;
+    
 }
 #rightArrow {
     position: absolute;
@@ -62,8 +63,7 @@ p {
     left: 800px;
     height: 50px;
     width: 30px;
-    background-color:  rgb(10, 150, 189);
+    background-color:  #e0ddae;
     border: none;
     transform: rotate(0.5turn);
-
 }
