@@ -1,22 +1,46 @@
 
 body {
-    /*background-color: rgb(242, 229, 245);*/
     background: -webkit-linear-gradient(left, hsl(0, 93%, 22%),rgb(121, 2, 2), #9e0808, #be0e0e, #ce0505,  #be0e0e, #9e0808, rgb(121, 2, 2),hsl(0, 93%, 22%));
     position: relative;
+}
+main {
+    display: flex;
+    position: relative;
+    justify-self: center;
 }
 #viewer {
     width: 850px;
     height: 500px;
     display: flex;
-    position: relative;
+    position: absolute;
     justify-content: center;
     background: -webkit-linear-gradient(top, #fce982, #e0ddae,#eee08f);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-left: 19%;
     box-shadow: 0px 4px 6px 3px grey;
     border-radius: 2%;
 }
+#thumbnails {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 70px;
+    margin-top: 570px;
+    margin-left: 32%;
+    justify-content: space-around;
+    align-items: center;
+}
+.thumbnail {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #fce982;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 6px 1px black;
+    border-radius: 2%;
+}
+
 #first {
     position: absolute;
     width: 700px;
@@ -33,16 +57,17 @@ body {
     float: top;
     
 }
-h1 {
+h2 {
     margin-left: 35px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 0px;
     font-family: 'Dancing Script', cursive;
-    font-size: 30px;
+    font-size: 25px;
     font-style: initial;
 }
 p {
     margin-left: 15px;
+    margin-top: 5px;
     margin-bottom: 10px;
     font-family: 'Dancing Script', cursive;
     font-size: 20px;
