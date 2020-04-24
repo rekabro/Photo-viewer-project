@@ -14,10 +14,12 @@ let data = {
   $('#first').attr('src', data.kepek[0]);
   $('#title').append(data.titles[0]);
   $('#description').append(data.descriptions[0]);
-
+  
+  /*let kiskepek = ['th0', 'th1','th2','th3','th4','th5','th6','th7'];*/
   let currentPhoto = 0;
   let loadPhoto = (photoNumber) => {
   $('#first').attr('src', data.kepek[photoNumber]);
+  /*$(`#kiskepek[]`).css({'opacity':'50%'});*/
   }
    
   let ezaTitle = 0;
@@ -56,7 +58,58 @@ let data = {
     loadTitle(ezaTitle);
     loadLeiras(ezaLeiras);
   })
- 
+
+  $('#th0').click(() => {
+    loadPhoto(0);
+    loadTitle(0);
+    loadLeiras(0);
+     })
+  $('#th1').click(() => {
+    loadPhoto(1);
+    loadTitle(1);
+    loadLeiras(1);
+     })
+  $('#th2').click(() => {
+    loadPhoto(2);
+    loadTitle(2);
+    loadLeiras(2);
+      })
+  $('#th3').click(() => {
+    loadPhoto(3);
+    loadTitle(3);
+    loadLeiras(3);
+      })
+  $('#th4').click(() => {
+    loadPhoto(4);
+    loadTitle(4);
+    loadLeiras(4);
+      })
+  $('#th5').click(() => {
+    loadPhoto(5);
+    loadTitle(5);
+    loadLeiras(5);
+      })
+  $('#th6').click(() => {
+    loadPhoto(6);
+    loadTitle(6);
+    loadLeiras(6);
+      })
+  $('#th7').click(() => {
+    loadPhoto(7);
+    loadTitle(7);
+    loadLeiras(7);
+      })
+     
+      /*$( "#th1" ).mouseover(function() {
+        $( "#log" ).append( "<div>Handler for .mouseover() called.</div>" );
+      });*/
+  /*let fotok = ['kepek/1pappesz.jpg', 'kepek/2kuruclesi.jpg', 'kepek/3varsag.jpg', 'kepek/4hagymas.jpg', 'kepek/5kereszt.jpg', 'kepek/6madaras.jpg', 'kepek/7csok.jpg', 'kepek/8arnyek.jpg'];
+
+  for (var i=0; i < 7; i++) {
+    fotok.forEach((item, index) => {
+      $('#thumbnails').append(<div class = "thumbnail" data-index="${index}"> ${item} </div>);
+  })
+}*/
   /*let fotok = ['kepek/1pappesz.jpg', 'kepek/2kuruclesi.jpg', 'kepek/3varsag.jpg', 'kepek/4hagymas.jpg', 'kepek/5kereszt.jpg', 'kepek/6madaras.jpg', 'kepek/7csok.jpg', 'kepek/8arnyek.jpg'];
  
   fotok.forEach((item, index) => {
@@ -70,16 +123,15 @@ let data = {
 })*/ 
 
   
-  $('.thumbnail').attr(data-number);
+/*  $('.thumbnail').attr(data-number);
   $('.thumbnail').click(() => {
       loadPhoto(kepek[data-number]);
       loadTitle(titles[data-number]);
     loadLeiras(descriptions[data-number]);
-    })
+    })*/
 /*names.forEach((name) => { // for each item in names
   console.log(`Welcome, dear ${name}!`); // print out the item
 })
-
 $('.add').on('click', (event) => { // clicking on .add class-ed elements
   $('.container').append('<p>A new paragraph</p>'); // add a new element into .container
 }); */
